@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans Hebrew', Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.6;
+}
+
+.chinese-pattern {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(220,20,60,0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #FFF8DC 100%);
+}
+
+/* RTL adjustments for components */
+.rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Custom scrollbar for RTL */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DC143C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B0000;
+}
