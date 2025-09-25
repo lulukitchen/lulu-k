@@ -14,7 +14,12 @@ function App() {
   return (
     <HelmetProvider>
       <I18nextProvider i18n={i18n}>
-        <Router>
+        <Router
+          future={{
+            v7_startTransition: true,
+            v7_relativeSplatPath: true
+          }}
+        >
           <div className="App min-h-screen bg-white text-chinese-black">
             <Suspense fallback={
               <div className="flex items-center justify-center min-h-screen">
