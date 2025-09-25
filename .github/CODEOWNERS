@@ -1,0 +1,17 @@
+# Global ownership
+* @lulukitchen
+
+# TypeScript configuration
+tsconfig*.json @lulukitchen
+vite.config.ts @lulukitchen
+tailwind.config.js @lulukitchen
+
+# Source code
+src/ @lulukitchen
+
+# Environment and configuration
+.env* @lulukitchen
+package*.json @lulukitchen
+
+# GitHub configuration  
+.github/ @lulukitchen
