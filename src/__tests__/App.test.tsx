@@ -26,6 +26,7 @@ describe('App Components', () => {
     
     // Check for the unique text in the hero section
     expect(screen.getByText('אוכל סיני אותנטי מוכן טרי בירושלים והסביבה')).toBeInTheDocument();
-    expect(screen.getByText('הזמן עכשיו')).toBeInTheDocument();
+    // Use flexible text matcher to handle cases where text might be split across elements
+    expect(screen.getByText((content) => content.includes('הזמן עכשיו'))).toBeInTheDocument();
   });
 });

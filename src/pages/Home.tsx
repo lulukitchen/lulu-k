@@ -189,6 +189,12 @@ const Home: React.FC = () => {
                 to="/menu"
                 className="inline-block bg-chinese-gold text-chinese-black px-8 py-3 rounded-lg font-semibold hover:bg-chinese-lightGold transition-colors"
               >
+                {t('orderNow')}
+              </Link>
+              <Link
+                to="/menu"
+                className="inline-block bg-chinese-gold text-chinese-black px-8 py-3 rounded-lg font-semibold hover:bg-chinese-lightGold transition-colors"
+              >
                 עיינו בתפריט
               </Link>
               <a
